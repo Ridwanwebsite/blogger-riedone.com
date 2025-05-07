@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/asset/style/style.css">
+    <title>Blogger</title>
+</head>
+<body>
+    <header>
+        <h1>Blogger</h1>
+        <nav class="container">
+            <ul class="menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tambah-artikel.html">Artikel</a></li>
+                <li><a href="">Tentang</a></li>
+                <li><a href="">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="add-article">
+        <h2>Tambah Artikel Baru</h2>
+        <form id="article-form">
+            <div>
+                <label for="title">Judul:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div>
+                <label for="content">Konten:</label>
+                <textarea id="content" name="content" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn">Tambah Artikel</button>
+        </form>
+    </section>
+
+    <section class="articles">
+        <table>
+            <thead>
+                <tr>
+                    <th>Judul</th>
+                    <th>Konten</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="article-list">
+                <!-- Articles will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p class="footer">Hak Cipta &copy; 2025 <a class="link" href="https://www.ansoriweb.com/">AnsoriWeb.com</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
